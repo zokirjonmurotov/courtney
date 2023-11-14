@@ -1,0 +1,22 @@
+.text{
+    color: #16205F;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    padding: 20px 0;
+}
+
+@media(max-width:750px){
+    .text{
+        width: 70%;
+    }
+}
+
+@media(max-width:550px){
+    .text{
+        width: 100%;
+    }
+}
