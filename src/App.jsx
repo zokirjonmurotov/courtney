@@ -21,7 +21,6 @@ function App() {
           <Route path="careers" element={<Careers />} />
         </Route>
       </Routes>
-
     </>
   );
 }
