@@ -1,0 +1,234 @@
+
+
+.apply-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  width: 100%;
+  .apply-img {
+    // width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    height: 992px;
+  }
+
+  .apply-form {
+    background-color: #ffffff;
+    border-radius: 100px 0 0 0;
+    padding: 86px;
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    margin: 67px 0;
+    .header-form {
+      color: #16205f;
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 58px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+      row-gap: 44px;
+      margin-top: 41px;
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .label {
+          color: #16205f;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+
+        .input {
+          padding: 0 10px;
+          border: 1px solid #c5e0ff;
+          outline: none;
+          border-radius: 8px;
+          font-size: 24px;
+          height: 60px;
+        }
+      }
+
+      .textarea-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        grid-column-end: 3;
+        grid-column-start: 1;
+        .label {
+          color: #16205f;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        .textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #c5e0ff;
+          outline: none;
+          border-radius: 8px;
+          font-size: 24px;
+          height: 60px;
+        }
+      }
+      .check-box-container {
+        display: flex;
+        gap: 10px;
+        grid-column-end: 3;
+        grid-column-start: 1;
+
+        .check-box {
+          background-color: #16205f;
+        }
+        .checkbox-label {
+          color: #16205f;
+          font-size: 16px;
+          font-weight: 400;
+          .span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:1500px){
+  .apply-section {
+    // width: 80%;
+    margin: 50px;
+  
+    .apply-img {
+      width: 100%;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 9;
+      height: 700px;
+    }
+  
+    .apply-form {
+      background-color: #ffffff;
+      border-radius: 100px 0 0 0;
+      padding: 66px;
+      margin: 37px 0;
+      .header-form {
+        color: #16205f;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 58px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      form {
+        column-gap: 22px;
+        row-gap: 34px;
+        margin-top: 31px;   
+      }
+    }
+  }
+}
+
+@media(max-width:1150px){
+  .apply-section {
+    width: 100%;
+    margin: 50px;
+  
+    .apply-img {
+      height: 992px;
+    }
+  
+    .apply-form {
+      padding: 86px;
+      margin: 67px 0;
+      .header-form {
+        font-size: 46px;
+        font-weight: 600;
+      }
+      form {
+        column-gap: 24px;
+        row-gap: 44px;
+        margin-top: 41px;
+      }
+    }
+  }
+}
+
+
+@media(max-width:790px){
+  .apply-section {
+    width: 100%;
+    margin: 50px;
+    align-items: center;
+   
+  
+    .apply-img {
+      height: 700x;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
+  
+    .apply-form {
+      padding: 86px;
+      margin: 10px 0;
+      grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    align-items: center;
+      .header-form {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      form {
+        column-gap: 24px;
+        row-gap: 44px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+
+@media(max-width:590px){
+  .apply-section {
+    width: 100%;
+    margin: 50px;
+    align-items: center;
+   
+  
+    .apply-img {
+      height: 700px;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
+  
+    .apply-form {
+      padding: 86px;
+      margin: 10px 0;
+      grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    align-items: center;
+      .header-form {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      form {
+         display: flex;
+         flex-direction: column;
+        column-gap: 14px;
+        row-gap: 44px;
+        margin-top: 0px;
+       
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.ccard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 10px;
+    height: 200px;
+
+    .ccard-heading{
+        color:var(--main-text-color);
+        font-family: var(--font-family);
+        font-size: var(--ordinary-text-font-size);
+        font-weight: 600;
+        line-height: 2.25rem;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+    .ccard-email{
+        color: var(--main-text-color);
+        font-family: var(--font-family);
+            font-size: 1.125rem;
+            font-weight: 400;
+    }
+    .ccard-tel{
+        color: var(--main-text-color);
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-style: 1.5rem;
+    }
+    .ccard-img{
+        width:132px;
+        height: 132px;
+        text-align: center;
+    
+        
+    }
+}
+
+@media(max-width:666px){
+    .ccard{
+        width: 50%;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:250px){
+    .ccard{
+    .ccard-img{
+       width: 50px;
+       height: 50px;
+    }}
+}
