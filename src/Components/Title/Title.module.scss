@@ -1,12 +1,19 @@
 .text{
-    color: #16205F;
+    font-family: var( --font-family);
+    color: var(--main-text-color);
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 1rem;
-    padding: 20px 0;
+    gap: 2rem;
+    .h2{
+        font-size: var(--heading2-font-size);
+    }
+    .p{
+        font-size: var(--ordinary-text-font-size);
+        
+    }
 }
 
 @media(max-width:750px){
