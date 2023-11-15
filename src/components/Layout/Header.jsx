@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import styles from "./Header.module.scss"; // Import the SCSS module
 
 export default function Header() {
-  const [isToggled, setIsToggled] = useState(true);
+  const [isToggled, setIsToggled] = useState(false);
 
   const handleClick = () => {
     setIsToggled(!isToggled);
