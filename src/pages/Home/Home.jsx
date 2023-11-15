@@ -1,23 +1,22 @@
 import React from 'react';
-
-
-const HomeCardData = [
-    {
-
-    }
-]
+import Section2 from '../Home/components/section2/Section2';
+import Process from '../Home/components/process/Process';
+import Expertise from './components/expertise/Expertise';
+import Specialized from '../Home/components/specialized/Specialized';
+import Technologies from '../Home/components/techSection/Technologies';
+import Clients from '../Home/components/clients/Clients';
+import Showcase from './components/showcase/Showcase';
 
 const Home = () => {
     return (
         <div>
-
-            {/* <Button /> */}
-            {/* <Showcase /> */}
-            {/* {
-                HomeCardData.map((item)=>(
-                    <Card ti/>
-                ))
-            } */}
+            <Showcase/>
+            <Section2/>
+            <Process/>
+            <Expertise/>
+            <Specialized/>
+            <Technologies/>
+            <Clients/>
         </div>
     );
 }
