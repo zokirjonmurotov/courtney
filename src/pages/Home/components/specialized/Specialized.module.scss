@@ -1,0 +1,37 @@
+.specialized {
+    background: #F9F9F9;
+    padding: 120px 0;
+}
+
+.specialized__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    img {
+        width: 250px;
+    }
+}
+
+
+
+@media (max-width: 1110px) {
+    .specialized {
+        padding: 80px 0;
+    }
+    .specialized__images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 830px) {
+    .specialized__images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .specialized__images {
+        grid-template-columns: 1fr;
+       place-items: center;
+    }
+}
