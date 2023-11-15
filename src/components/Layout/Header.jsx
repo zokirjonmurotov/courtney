@@ -33,7 +33,7 @@ export default function Header() {
                 Contact us
               </Link>
               <div className={styles.bar}>
-                <i onClick={handleClick} class="fa-solid fa-bars"></i>
+                <i onClick={handleClick} className="fa-solid fa-bars"></i>
               </div>
             </div>
           </nav>
@@ -44,7 +44,7 @@ export default function Header() {
         >
           {/* Use conditional class names to show/hide the navigation links */}
           <h1 className={styles.x} onClick={handleClick}>
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </h1>
           <Link onClick={handleClick} to="/start">
             How to start
