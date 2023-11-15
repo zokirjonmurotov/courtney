@@ -1,0 +1,16 @@
+.expertise {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.section4 {
+    margin: 100px 0;
+}
+
+
+@media (max-width:900px ) {
+.expertise {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
