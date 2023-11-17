@@ -1,0 +1,13 @@
+.section2 {
+    display: flex;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+
+@media (max-width: 900px) {
+    .section2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

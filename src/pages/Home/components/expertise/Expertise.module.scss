@@ -1,0 +1,23 @@
+.expertise {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.section4 {
+    margin: 100px 0;
+}
+
+
+@media (max-width:900px ) {
+.expertise {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width:530px ) {
+    .expertise {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
