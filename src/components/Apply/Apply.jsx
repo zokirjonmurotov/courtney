@@ -3,10 +3,15 @@ import "./Apply.scss";
 import applying from "../../assets/apply.png";
 import Button from "../Button/Button";
 
-export default function Apply() {
+export default function Apply(props) {
+  const { image} = props;
   return (
     <div className="apply-section">
-      <img src={applying} className="apply-img" />
+      {image ? (
+        <img src={image} alt="image props" className="apply-img" />
+      ) : (
+        <img src={applying} alt="Default" className="apply-img"/>
+      )}
       <div className="apply-form">
         <h4 className="header-form">
           Connect With Your
