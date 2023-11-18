@@ -7,6 +7,7 @@ import Technologies from '../Home/components/techSection/Technologies';
 import Clients from '../Home/components/clients/Clients';
 import Showcase from './components/showcase/Showcase';
 import Apply from '../../Components/Apply/Apply'
+import Container from './components/container/Container';
 
 const Home = () => {
     return (
@@ -18,7 +19,9 @@ const Home = () => {
             <Specialized/>
             <Technologies/>
             <Clients/>
+            <Container>
             <Apply/>
+            </Container>
         </div>
     );
 }
