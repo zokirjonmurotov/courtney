@@ -1,0 +1,22 @@
+.clients {
+    background: #F8F8F8;
+    padding: 80px 0;
+}
+
+.clients__images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    img {
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .clients__images {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    } 
+}
