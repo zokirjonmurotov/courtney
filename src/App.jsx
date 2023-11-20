@@ -10,7 +10,7 @@ import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import StartPage from './pages/StartPage/StartPage';
 import Technologies from './pages/Technologies/Technologies';
-import Careers from './pages/Career/Careers';import Careers from './pages/Careers/Careers'
+import Careers from './pages/Careers/Careers'
 
 function App() {
   return (
