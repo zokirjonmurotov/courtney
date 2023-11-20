@@ -16,9 +16,7 @@ const DevSection = () => {
            <div className={devStyles.devSection}>
             <h2 className={devStyles.h2}>Why You Need To Hire Remote Developers</h2>
                     <div className={devStyles.h3}>{
-                        ArrForText.map((item, i)=>{
-                            return <h3 key={i}>{item.h3}</h3>
-                        })
+                        ArrForText.map((item, i)=> <h3 key={i}>{item.h3}</h3>)
                     }
                     </div>
                     <div className={devStyles.showcase}>

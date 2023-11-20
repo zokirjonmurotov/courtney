@@ -12,6 +12,9 @@ footer {
       justify-content: space-between;
       gap: 3rem;
       flex-wrap: wrap;
+      .footer-first-row{
+        width: 200px;
+      }
       .footer-first-row,
       .footer-second-row,
       .footer-third-row,
