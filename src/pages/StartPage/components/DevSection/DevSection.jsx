@@ -1,5 +1,6 @@
 import React from 'react';
 import devStyles from './DevSection.module.scss'
+import Apply from '../../../../Components/Apply/Apply';
 
 let ArrForText =[
     {h3: '>Talent shortage'},
@@ -24,6 +25,9 @@ const DevSection = () => {
                         <p>Developers</p>
                     </div>
 
+            </div>
+            <div className={devStyles.apply}>
+                    <Apply/>
             </div>
            </div>
         </div>
