@@ -1,5 +1,6 @@
 import React from 'react';
-import Showcase from '../../Components/Showcase';
+// import Showcase from '../../Components/Showcase';
+import Showcase from '../../components/Showcase/Showcase';
 import Start from './components/Start/Start';
 import DevSection from './components/DevSection/DevSection'
 const StartPage = () => {

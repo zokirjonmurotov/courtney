@@ -2,7 +2,9 @@
 
 import React from 'react'
 import TechnologiesScss from './Technologies.modules.scss'
-import Showcase from '../../Components/Showcase'
+// import Showcase from '../../Components/Showcase'
+import Showcase from '../../components/Showcase/Showcase';
+
 import Card from './Component/Card';
 import Apply from '../../Components/Apply/Apply';
 import Title from '../../Components/Title/Title';
@@ -52,7 +54,7 @@ export default function Technologies() {
 
   return (
     <div className={TechnologiesScss.technologiesPage}>
-      <Showcase showcaseBigText = 'Technologies' showcaseSmallText = 'We specialize in helping you build a team of expert developers.' />
+      <Showcase showcaseBigText='Technologies' showcaseSmallText='We specialize in helping you build a team of expert developers.' />
       <Title />
       <ul>
         <li><a href="#">All</a></li>
