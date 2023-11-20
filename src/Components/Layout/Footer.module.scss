@@ -19,6 +19,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        font-family: 'Poppins', sans-serif;
         .social {
           display: flex;
           gap: 3rem;
@@ -33,5 +34,6 @@ footer {
   .bottomtext {
     font-size: var(--ordinary-text-font-size);
     color: var(--main-text-color);
+    font-family: 'Poppins', sans-serif;
   }
 }

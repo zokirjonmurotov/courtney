@@ -19,32 +19,32 @@ export default function Footer() {
               </p>
               <Link>
                 {" "}
-                <i class="fa-solid fa-phone"></i> +94 713249222
+                <i className="fa-solid fa-phone"></i> +94 713249222
               </Link>
               <Link>
                 {" "}
-                <i class="fa-solid fa-envelope"></i> hello@courtney.lk
+                <i className="fa-solid fa-envelope"></i> hello@courtney.lk
               </Link>
               <Link>
                 {" "}
-                <i class="fa-solid fa-location-dot"></i> Courtney Lanka
+                <i className="fa-solid fa-location-dot"></i> Courtney Lanka
                 (Private) Limited <br /> Level 35World Trade CenterColombo 01
               </Link>
               <div className={styles.social}>
                 <Link>
-                  <i class="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
                 <Link>
-                  <i class="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-facebook"></i>
                 </Link>
                 <Link>
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </Link>
                 <Link>
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </Link>
                 <Link>
-                  <i class="fa-brands fa-youtube"></i>
+                  <i className="fa-brands fa-youtube"></i>
                 </Link>
               </div>
             </div>

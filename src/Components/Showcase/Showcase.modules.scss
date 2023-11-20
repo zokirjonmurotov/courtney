@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.showcaseImage{
+    width: 100%;
+    height: 50vh;
+    background: rgba(19, 19, 19, 0.50) url('https://aleas.li/app/uploads/2018/10/annie-spratt-608001-unsplash-1440x375.jpg');
+}
+.showcaseText{
+   display: flex;
+   flex-direction: column;
+   
+
+   
+   align-items: center;
+   justify-content: center;
+    
+    
+
+}
+.showcaseBigText{
+    padding-top: 100px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 78px; /* 121.875% */
+}
+.showcaseSmallText{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 44%;
+}
+
+

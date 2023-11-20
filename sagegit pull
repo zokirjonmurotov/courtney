@@ -1,0 +1,44 @@
+[1mdiff --cc src/App.jsx[m
+[1mindex 61439a0,1b62007..0000000[m
+[1m--- a/src/App.jsx[m
+[1m+++ b/src/App.jsx[m
+[36m@@@ -1,15 -1,29 +1,29 @@@[m
+[31m -import { useState } from 'react'[m
+[31m -import reactLogo from './assets/react.svg'[m
+[32m +[m
+[31m- import './App.css'[m
+[31m- import Careers from './pages/Careers/Careers'[m
+[32m+ import './App.css';[m
+[32m+ import { Route, Routes } from 'react-router-dom';[m
+[32m+ import Layout from './components/Layout/Layout';[m
+[32m+ import Home from './pages/Home/Home';[m
+[32m+ import Services from './pages/Services/Services';[m
+[32m+ import Header from './components/Layout/Header';[m
+[32m+ import Footer from './components/Layout/Footer';[m
+[32m+ import StartPage from './pages/StartPage/StartPage';[m
+[32m+ import Technologies from './pages/Technologies/Technologies';[m
+[31m -import Careers from './pages/Career/Careers';[m
+[32m++import Careers from './pages/Career/Careers';import Careers from './pages/Careers/Careers'[m
+[32m +[m
+  function App() {[m
+[31m-   [m
+[31m- [m
+    return ([m
+      <>[m
+[31m-      <Careers/>[m
+[32m+       <Routes>[m
+[32m+         <Route path="/" element={<Layout />}>[m
+[32m+           <Route index element={<Home />} />[m
+[32m+           <Route path="services" element={<Services />} />[m
+[32m+           <Route path="start" element={<StartPage />} />[m
+[32m+           <Route path="technologies" element={<Technologies />} />[m
+[32m+           <Route path="careers" element={<Careers />} />[m
+[32m+         </Route>[m
+[32m+       </Routes>[m
+      </>[m
+[31m-   )[m
+[32m+   );[m
+  }[m
+  [m
+[31m- export default App[m
+[32m+ export default App;[m

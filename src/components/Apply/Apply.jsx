@@ -1,12 +1,17 @@
 import React from "react";
 import "./Apply.scss";
 import applying from "../../assets/apply.png";
-import Button from "../Button/Button.jsx";
+import Button from "../Button/Button";
 
-export default function Apply() {
+export default function Apply(props) {
+  const { image} = props;
   return (
     <div className="apply-section">
-      <img src={applying} className="apply-img" />
+      {image ? (
+        <img src={image} alt="image props" className="apply-img" />
+      ) : (
+        <img src={applying} alt="Default" className="apply-img"/>
+      )}
       <div className="apply-form">
         <h4 className="header-form">
           Connect With Your
@@ -14,7 +19,7 @@ export default function Apply() {
         </h4>
         <form>
           <div className="input-wrapper">
-            <label for="ab" className="label">
+            <label htmlFor="ab" className="label">
               Company
             </label>
             <input
@@ -26,7 +31,7 @@ export default function Apply() {
           </div>
 
           <div className="input-wrapper">
-            <label for="abc" className="label">
+            <label htmlFor="abc" className="label">
               Your Name
             </label>
             <input
@@ -38,7 +43,7 @@ export default function Apply() {
           </div>
 
           <div className="input-wrapper">
-            <label for="abd" className="label">
+            <label htmlFor="abd" className="label">
               Phone Number
             </label>
             <input
@@ -50,7 +55,7 @@ export default function Apply() {
           </div>
 
           <div className="input-wrapper">
-            <label for="abe" className="label">
+            <label htmlFor="abe" className="label">
               Email
             </label>
             <input
@@ -62,20 +67,20 @@ export default function Apply() {
           </div>
 
           <div className="textarea-wrapper">
-            <label for="ab" className="label">
+            <label htmlFor="ab" className="label">
               Project Detail
             </label>
             <textarea placeholder="placeholder" className="textarea" />
           </div>
 
           <div className="check-box-container">
-            <input type="checkbox" className="check-box" />
-            <label className="checkbox-label">
+            <input type="checkbox" className="check-box" id="privacy"/>
+            <label className="checkbox-label" htmlFor='privacy'>
               By sending this form I confirm that I have read and accept the{" "}
               <span className="span"> Privacy Policy</span>
             </label>
           </div>
-          <Button>GET CONSULTATION</Button>
+          <Button btnText='GET CONSULTATION' styles='orange'/>
         </form>
       </div>
     </div>
